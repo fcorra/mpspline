@@ -1,0 +1,30 @@
+Package: mpspline
+Type: Package
+Encoding: UTF-8
+Title: A package to estimate global area splines from aqp SoilProfileCollection 
+Version: 0.0.1
+Date: 2021-09-15
+Authors@R: 
+    person(
+      given = "Fabio",
+      family = "Corradini",
+      role = c("aut", "cre"),
+      email = "fabio.corradini@inia.cl",
+      comment = c(ORCID = "0000-0001-9696-7643")
+    )
+Maintainer: Fabio Corradini <fabio.corradini@inia.cl>
+Depends: 
+    R (>= 3.4.4.0)
+Imports:
+    stats,
+    utils,
+    methods,
+    aqp
+Suggests:
+    plyr,
+    scales,
+    sp
+Description: Global Soil Information Facilities - tools (standards and functions) and sample datasets for global soil mapping.
+License: GPL-3
+LazyLoad: yes
+RoxygenNote: 7.1.2

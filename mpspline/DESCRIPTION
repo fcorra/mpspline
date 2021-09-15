@@ -1,0 +1,30 @@
+Package: mpspline
+Type: Package
+Encoding: UTF-8
+Title: A Package to Estimate Global Area Splines from AQP SoilProfileCollection 
+Version: 0.0.1
+Date: 2021-09-15
+Authors@R: 
+    person(
+      given = "Fabio",
+      family = "Corradini",
+      role = c("aut", "cre"),
+      email = "fabio.corradini@inia.cl",
+      comment = c(ORCID = "0000-0001-9696-7643")
+    )
+Maintainer: Fabio Corradini <fabio.corradini@inia.cl>
+Depends: 
+    R (>= 3.4.4.0)
+Imports:
+    stats,
+    utils,
+    methods,
+    aqp
+Suggests:
+    plyr,
+    scales,
+    sp
+Description: The Global Soil Information Facilities (GSIF) package is not currently available at CRAN as PROJ8 does not have the proj_api.h header. However, we needed a function to calculate the equal-area splines in our work for FAO. Therefore, we adapted the function mpsplines, wrapping it inside its own package to work with it without the burden of PROJ8. All thanks should go to GSIF authors, Tomislav Hengl, Gerard Heuvelink, and Brendan Malone.
+License: GPL-3
+LazyLoad: yes
+RoxygenNote: 7.1.2
